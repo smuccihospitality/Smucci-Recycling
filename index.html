@@ -49,6 +49,32 @@
       padding: 1rem;
       color: #1f2937;
     }
+
+    /* Blurred buttons with neon outline */
+    a.group {
+      backdrop-filter: blur(6px);
+      background-color: rgba(255, 255, 255, 0.2) !important;
+      border: 2px solid #22c55e !important; /* green-500 neon color */
+      box-shadow:
+        0 0 5px #22c55e,
+        0 0 10px #22c55e,
+        0 0 20px #22c55e,
+        0 0 40px #22c55e;
+      transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+      color: black !important;
+    }
+    a.group:hover {
+      background-color: rgba(34, 197, 94, 0.15) !important; /* subtle green tint on hover */
+      transform: scale(1.05);
+      box-shadow:
+        0 0 10px #22c55e,
+        0 0 20px #22c55e,
+        0 0 30px #22c55e,
+        0 0 50px #22c55e,
+        0 0 70px #22c55e;
+      color: black !important;
+    }
+
   </style>
 </head>
 <body class="bg-gray-50">
@@ -66,39 +92,39 @@
 
       <!-- All Buttons Compact -->
       <div class="flex flex-col gap-3 items-center justify-center">
-        <a href="https://smuccideliverz.com/smuccivapes" class="group flex items-center px-6 py-3 text-base font-medium rounded-full text-black bg-transparent border border-green-600 hover:bg-green-100 transition-transform transform hover:scale-105 shadow-lg w-64 justify-start gap-3">
+        <a href="https://smuccideliverz.com/smuccivapes" class="group flex items-center px-6 py-3 text-base font-medium rounded-full bg-transparent w-64 justify-start gap-3">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
           </svg>
           <span class="flex-1 text-center">Request a Meeting</span>
         </a>
 
-        <a href="#sponsorship-info" class="group flex items-center px-6 py-3 text-base font-medium rounded-full text-black bg-transparent border border-green-600 hover:bg-green-100 transition-transform transform hover:scale-105 shadow-lg w-64 justify-start gap-3">
+        <a href="#sponsorship-info" class="group flex items-center px-6 py-3 text-base font-medium rounded-full bg-transparent w-64 justify-start gap-3">
           <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" class="w-6 h-6" alt="Sponsorship Icon" />
           <span class="flex-1 text-center">Sponsorship Info</span>
         </a>
 
-        <a href="#bulk-recycling-info" class="group flex items-center px-6 py-3 text-base font-medium rounded-full text-black bg-transparent border border-green-600 hover:bg-green-100 transition-transform transform hover:scale-105 shadow-lg w-64 justify-start gap-3">
+        <a href="#bulk-recycling-info" class="group flex items-center px-6 py-3 text-base font-medium rounded-full bg-transparent w-64 justify-start gap-3">
           <img src="https://cdn-icons-png.flaticon.com/128/17201/17201834.png" class="w-6 h-6" alt="Recycle Icon" />
           <span class="flex-1 text-center">Bulk Vape Recycling</span>
         </a>
 
-        <a href="https://www.instagram.com/smuccirecycling/" target="_blank" class="group flex items-center px-6 py-3 text-base font-medium rounded-full text-black bg-transparent border border-green-600 hover:bg-green-100 transition-transform transform hover:scale-105 shadow-lg w-64 justify-start gap-3">
+        <a href="https://www.instagram.com/smuccirecycling/" target="_blank" class="group flex items-center px-6 py-3 text-base font-medium rounded-full bg-transparent w-64 justify-start gap-3">
           <img src="https://cdn-icons-png.flaticon.com/512/3955/3955024.png" class="w-6 h-6" alt="Smucci Recycle" />
           <span class="flex-1 text-center">Smucci Recycle</span>
         </a>
 
-        <a href="https://www.instagram.com/smuccidrop/" target="_blank" class="group flex items-center px-6 py-3 text-base font-medium rounded-full text-black bg-transparent border border-green-600 hover:bg-green-100 transition-transform transform hover:scale-105 shadow-lg w-64 justify-start gap-3">
+        <a href="https://www.instagram.com/smuccidrop/" target="_blank" class="group flex items-center px-6 py-3 text-base font-medium rounded-full bg-transparent w-64 justify-start gap-3">
           <img src="https://cdn-icons-png.flaticon.com/512/3955/3955024.png" class="w-6 h-6" alt="Smucci Drop" />
           <span class="flex-1 text-center">Smucci Drop</span>
         </a>
 
-        <a href="https://www.instagram.com/smuccigroup?igsh=ZWR0dHB4eTRnanJz" target="_blank" class="group flex items-center px-6 py-3 text-base font-medium rounded-full text-black bg-transparent border border-green-600 hover:bg-green-100 transition-transform transform hover:scale-105 shadow-lg w-64 justify-start gap-3">
+        <a href="https://www.instagram.com/smuccigroup?igsh=ZWR0dHB4eTRnanJz" target="_blank" class="group flex items-center px-6 py-3 text-base font-medium rounded-full bg-transparent w-64 justify-start gap-3">
           <img src="https://cdn-icons-png.flaticon.com/512/3955/3955024.png" class="w-6 h-6" alt="Smucci Vapes" />
           <span class="flex-1 text-center">Smucci Vapes</span>
         </a>
 
-        <a href="https://www.instagram.com/smuccihospitality/" target="_blank" class="group flex items-center px-6 py-3 text-base font-medium rounded-full text-black bg-transparent border border-green-600 hover:bg-green-100 transition-transform transform hover:scale-105 shadow-lg w-64 justify-start gap-3">
+        <a href="https://www.instagram.com/smuccihospitality/" target="_blank" class="group flex items-center px-6 py-3 text-base font-medium rounded-full bg-transparent w-64 justify-start gap-3">
           <img src="https://cdn-icons-png.flaticon.com/512/3955/3955024.png" class="w-6 h-6" alt="Smucci Hospitality" />
           <span class="flex-1 text-center">Smucci Hospitality</span>
         </a>
